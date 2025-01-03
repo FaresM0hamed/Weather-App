@@ -43,4 +43,7 @@ jobs:
       - name: Upload APK to Firebase App Distribution
         run: |
           npm install -g firebase-tools
-          firebase appdistribution:distribute app/build/outputs/apk/debug/app-debug.apk --app ${{ secrets.FIREBASE_APP_ID }} --token ${{ secrets.FIREBASE_AUTH_TOKEN }} --groups "testers"
+          firebase appdistribution:distribute \
+            app/build/outputs/apk/debug/app-debug.apk \
+            --app ${{ secrets.FIREBASE_APP_ID }} \
+            --token ${{ secrets.FIREBASE_AUTH_TOKEN }}
