@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     id ("kotlin-kapt")
     id ("com.google.dagger.hilt.android")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -88,6 +89,9 @@ dependencies {
     testImplementation ("org.mockito.kotlin:mockito-kotlin:4.0.0")
     testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.2")
     testImplementation ("org.mockito:mockito-inline:4.6.1")
+
+
+    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
 
 }
 

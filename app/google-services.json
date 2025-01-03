@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "288425650477",
+    "project_id": "ci-cd-app-distribution-33998",
+    "storage_bucket": "ci-cd-app-distribution-33998.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288425650477:android:a20cb689b118b0afe60ba4",
+        "android_client_info": {
+          "package_name": "com.devfares.interviewtaskadvansyswithvodafone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJTM3pm_s4fNqi4a0iB63__v2o2F9djlE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
