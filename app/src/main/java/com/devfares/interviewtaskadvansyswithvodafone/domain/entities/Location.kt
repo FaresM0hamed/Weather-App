@@ -3,7 +3,8 @@ package com.devfares.interviewtaskadvansyswithvodafone.domain.entities
 import androidx.annotation.Keep
 
 @Keep
-data class ValidationResult(
-    val isValid: Boolean,
-    val errorMessage: String? = null
+data class Location(
+    val name: String,
+    val region: String,
+    val country: String,
 )

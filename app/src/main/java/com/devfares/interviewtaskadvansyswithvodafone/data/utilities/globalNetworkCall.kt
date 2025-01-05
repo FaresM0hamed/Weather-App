@@ -1,6 +1,7 @@
 package com.devfares.interviewtaskadvansyswithvodafone.data.utilities
 
 import android.util.Log
+import com.devfares.interviewtaskadvansyswithvodafone.data.sources.remote.model.BaseApiResponse
 import com.devfares.interviewtaskadvansyswithvodafone.domain.entities.DomainResult
 
 import com.google.gson.Gson
@@ -66,7 +67,6 @@ suspend fun <T, Y> globalNetworkCall(
                     || exceptionMessage.contains("timeout")
                     || exceptionMessage.contains("Connection reset")
                     || exceptionMessage.contains("java.net.SocketException: Socket closed")
-//                    || exceptionMessage.contains("Failed to connect to")
                 ) {
                     DomainResult.Error(message = "Check your internet connection")
                 } else if (e.cause.toString().contains("Network is unreachable")) {

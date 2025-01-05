@@ -18,5 +18,4 @@ class ApiServicesModule {
         return retrofit.create(WeatherApi::class.java)
     }
 
-
 }

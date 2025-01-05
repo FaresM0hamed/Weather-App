@@ -1,13 +1,13 @@
 package com.devfares.interviewtaskadvansyswithvodafone.data.sources.remote.mappers
 
-import com.devfares.interviewtaskadvansyswithvodafone.data.utilities.BaseApiResponse
-import com.devfares.interviewtaskadvansyswithvodafone.data.utilities.ConditionDTO
-import com.devfares.interviewtaskadvansyswithvodafone.data.utilities.CurrentDTO
-import com.devfares.interviewtaskadvansyswithvodafone.data.utilities.DayDTO
-import com.devfares.interviewtaskadvansyswithvodafone.data.utilities.ErrorDTO
-import com.devfares.interviewtaskadvansyswithvodafone.data.utilities.ForecastDTO
-import com.devfares.interviewtaskadvansyswithvodafone.data.utilities.ForecastDayDTO
-import com.devfares.interviewtaskadvansyswithvodafone.data.utilities.LocationDTO
+import com.devfares.interviewtaskadvansyswithvodafone.data.sources.remote.model.BaseApiResponse
+import com.devfares.interviewtaskadvansyswithvodafone.data.sources.remote.model.ConditionDTO
+import com.devfares.interviewtaskadvansyswithvodafone.data.sources.remote.model.CurrentDTO
+import com.devfares.interviewtaskadvansyswithvodafone.data.sources.remote.model.DayDTO
+import com.devfares.interviewtaskadvansyswithvodafone.data.sources.remote.model.ErrorDTO
+import com.devfares.interviewtaskadvansyswithvodafone.data.sources.remote.model.ForecastDTO
+import com.devfares.interviewtaskadvansyswithvodafone.data.sources.remote.model.ForecastDayDTO
+import com.devfares.interviewtaskadvansyswithvodafone.data.sources.remote.model.LocationDTO
 import com.devfares.interviewtaskadvansyswithvodafone.domain.entities.Condition
 import com.devfares.interviewtaskadvansyswithvodafone.domain.entities.Current
 import com.devfares.interviewtaskadvansyswithvodafone.domain.entities.Day

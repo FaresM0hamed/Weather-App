@@ -1,4 +1,4 @@
-package com.devfares.interviewtaskadvansyswithvodafone.presentation.screens
+package com.devfares.interviewtaskadvansyswithvodafone.presentation.screens.home_screen
 
 import com.devfares.interviewtaskadvansyswithvodafone.domain.entities.Condition
 import com.devfares.interviewtaskadvansyswithvodafone.domain.entities.Current
@@ -12,6 +12,7 @@ import com.devfares.interviewtaskadvansyswithvodafone.domain.entities.MainRespon
 data class HomeScreenUiState(
     val isLoading: Boolean = false,
     val errorMessage: String = "",
+    val isCityEmpty: Boolean = true,
     val weatherData: MainResponse = MainResponse(
         current = Current(
             condition = Condition(

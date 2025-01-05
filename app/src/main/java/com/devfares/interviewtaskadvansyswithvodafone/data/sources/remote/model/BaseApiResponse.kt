@@ -1,7 +1,9 @@
-package com.devfares.interviewtaskadvansyswithvodafone.data.utilities
+package com.devfares.interviewtaskadvansyswithvodafone.data.sources.remote.model
 
 import com.google.gson.annotations.SerializedName
+import androidx.annotation.Keep
 
+@Keep
 data class BaseApiResponse(
     @SerializedName("current")
     val current: CurrentDTO?=null,
@@ -13,7 +15,7 @@ data class BaseApiResponse(
     val error: ErrorDTO?=null
 )
 
-
+@Keep
 data class LocationDTO(
     @SerializedName("name")
     val name: String?=null,
@@ -23,6 +25,7 @@ data class LocationDTO(
     val country: String?=null,
 )
 
+@Keep
 data class CurrentDTO(
     @SerializedName("condition")
     val condition: ConditionDTO?=null,
@@ -30,11 +33,13 @@ data class CurrentDTO(
     val tempC: Double?=null,
 )
 
+@Keep
 data class ForecastDTO(
     @SerializedName("forecastday")
     val forecastDay: List<ForecastDayDTO>?=null,
 )
 
+@Keep
 data class ConditionDTO(
     @SerializedName("code")
     val code: Int?=null,
@@ -44,6 +49,7 @@ data class ConditionDTO(
     val text: String?=null
 )
 
+@Keep
 data class ForecastDayDTO(
     @SerializedName("date")
     val date: String?=null,
@@ -51,6 +57,7 @@ data class ForecastDayDTO(
     val day: DayDTO?=null,
 )
 
+@Keep
 data class DayDTO(
     @SerializedName("condition")
     val condition: ConditionDTO?=null,
@@ -60,6 +67,7 @@ data class DayDTO(
     val minTempC: Double?=null,
 )
 
+@Keep
 data class ErrorDTO(
     @SerializedName("code")
     val code: Int?=null,
