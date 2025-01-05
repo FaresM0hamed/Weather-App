@@ -51,7 +51,7 @@ afterEvaluate {
                 artifactId = "weather-utils"
                 version = "1.0.0"
 
-                artifact(layout.buildDirectory.file("outputs/aar/${project.name}-release.aar"))
+                from(components["release"])
             }
         }
         repositories {

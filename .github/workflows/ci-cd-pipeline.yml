@@ -31,6 +31,9 @@ jobs:
           api-level: 35
           build-tools: 35.0.0
 
+      - name: Build WeatherUtil AAR
+        run: ./gradlew :WeatherUtil:assembleRelease
+
       - name: Publish WeatherUtil to Maven Local
         run: ./gradlew :WeatherUtil:publishToMavenLocal
 
